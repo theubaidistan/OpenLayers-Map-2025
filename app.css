@@ -1,4 +1,4 @@
-html {
+/* html {
   font-family: sans-serif;
 }
 
@@ -16,6 +16,56 @@ html {
 form {
   text-align: center;
   margin: 2rem auto;
+} */
+
+html {
+  font-family: sans-serif;
+}
+
+#map {
+  width: 90%;
+  height: 20rem;
+  border: 1px solid #ccc;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically (optional) */
+  gap: 0.5rem; /* space between input and button */
+  margin: 2rem auto;
+}
+
+/* Make input and button responsive */
+form input[type="text"] {
+  width: 200px;
+  padding: 0.5rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* 📲 Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  #map {
+    width: 95%;
+    height: 20rem;
+  }
+
+  form input[type="text"] {
+    width: 300px;
+  }
+
+  form button {
+    width: auto;
+  }
 }
 
 /* 📲 Tablet */
