@@ -13,6 +13,7 @@ pnpm-debug.log*
 # ---------------------------
 .env*
 !.env.example
+.env.local
 
 # ---------------------------
 # Build outputs
@@ -23,6 +24,10 @@ out/
 public/build/
 .tmp/
 .temp/
+
+# Ignore bundled JS maps
+dist/**/*.map
+build/**/*.map
 
 # ---------------------------
 # Caches
@@ -71,8 +76,3 @@ Thumbs.db
 # Sass
 # ---------------------------
 .sass-cache/
-
-# ---------------------------
-# Optional: ignore source maps (uncomment if you don’t commit them)
-# ---------------------------
-# *.map
