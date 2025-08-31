@@ -1,0 +1,54 @@
+html {
+  font-family: sans-serif;
+}
+
+#map {
+  width: 90%;
+  height: 20rem;
+  border: 1px solid #ccc;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  #map {
+    width: 100%;
+    height: 16rem;
+    margin: 1rem 0;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  form input[type="text"],
+  form button {
+    width: 90%;
+  }
+}
+
+/* 📲 Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  #map {
+    width: 95%;
+    height: 20rem;
+  }
+
+  form input[type="text"] {
+    width: 300px;
+  }
+
+  form button {
+    width: auto;
+  }
+}

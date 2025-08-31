@@ -114,6 +114,7 @@ function searchAddressHandler(event: Event) {
 form.addEventListener("submit", searchAddressHandler);
 */
 
+import "./app.css";
 import "ol/ol.css";
 import Map from "ol/Map";
 import View from "ol/View";
